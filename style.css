@@ -65,6 +65,25 @@ body {
   background-image: url('img/icon-email-header.svg');
 }
 
+.page-header a.language::after {
+  display: none;
+}
+
+.page-header a.language:focus,
+.page-header a.language:hover {
+  filter: brightness(1.08);
+  transition: filter 500ms;
+}
+a.language {
+  display: block;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 35px;
+  height: 35px;
+  border-radius: 10em;
+}
+
 .header-phone {
   padding-left: 25px;
   background-image: url('img/icon-phone-header.svg');
